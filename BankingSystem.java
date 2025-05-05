@@ -17,13 +17,13 @@ class SavingAccount implements Account
     }
     public void withdraw(double with)
     {
-      this.with=with;
       if(with>dep)
       {
         System.out.println("insufficient amount!!!");
       }
       else
       {
+        this.with=with;
         System.out.println(with+" is successfully withdrawed!!!");
       }
       
@@ -44,13 +44,14 @@ class currentAcc implements Account
   }
   public void withdraw(double with)
   {
-    this.with=with;
+    
     if(with>dep)
     {
       System.out.println("insufficient amount!!!");
     }
     else
     {
+      this.with=with;
       System.out.println(with+" is successfully withdrawed!!!");
     }
     
